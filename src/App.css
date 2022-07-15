@@ -4,32 +4,28 @@
     box-sizing: border-box;
 }
 
-/* body{
-  
+body{
+  font-family: 'Poppins',sans-serif;
+}
+
+/* .Main1{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Main2{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #111;
+  border: 1px solid red;
 } */
 
-/* SCROLL BAR */
-
-  /* width */
-  ::-webkit-scrollbar {
-    width: 7px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #2a2b31; 
-  }
-
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: rgb(134, 0, 128); 
-    /* border-radius: 10px; */
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: rgb(75, 0, 71); 
-  }
 
 
 
