@@ -71,7 +71,6 @@ export const MenuWrapper = styled.div`
     transition: 0.5s;
     padding-top: 60px;
     h2{
-        padding: 8px 8px 8px 32px;
         font-size: 25px;
         color: #818181;
         display: block;

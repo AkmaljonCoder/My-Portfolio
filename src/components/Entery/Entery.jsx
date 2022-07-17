@@ -6,8 +6,8 @@ const Entery = () => {
     <Wrapper>
       <Container>
         <TextDiv>
-          <h1>Akmaljon Azimov</h1>
-          <h3>Frontend developer <br/> 16 years old , Uzbekistan</h3>
+          <h1>Akmal Azimov</h1>
+          <h3>Front-end developer <br/> 16 years old , Uzbekistan</h3>
           <h2>RU | ENG</h2>
         </TextDiv>
         <ImageBgc></ImageBgc>

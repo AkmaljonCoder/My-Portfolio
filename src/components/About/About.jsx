@@ -6,18 +6,17 @@ const About = () => {
     <Container>
         
         <h1>About me</h1>
-        <h2> 
-            Hi, I'm Denis – UX/UI designer from Minsk. 
-            I'm interested in design and everything connected with it.
-        </h2>
-        <h3>
-            I'm studying at courses "Web and mobile design 
-            interfaces" in IT-Academy.
-        </h3>
-        <h4>
-            Ready to implement excellent projects
+        <p> 
+            Hi , I'm Akmal - Frontend developer from Uzbekistan. <br />
+            I'm interested in make web sites.
+        </p>
+        <p>
+            I'm studying at courses of "Front-end development" <br /> in Digital city.
+        </p>
+        <p>
+            Ready to implement excellent projects <br />
             with wonderful people.
-        </h4>
+        </p>
 
     </Container>
   )

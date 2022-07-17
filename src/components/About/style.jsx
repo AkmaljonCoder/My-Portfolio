@@ -13,37 +13,28 @@ export const Container = styled.div`
         line-height: 42px;
         text-align: center;
         color: #070707;
-        max-width: 485.34px;
+        margin: 10px;
     }
-    h2{
-        max-width: 300px;
+    p{
         font-size: 18px;
         line-height: 22px;
         text-align: center;
-
-        /* Black */
-
         color: #070707;
+        font-weight: 300;
+        margin: 14px;
     }
-    h3{
-        max-width: 280px;
-        font-size: 18px;
-        line-height: 22px;
-        text-align: center;
-
-        /* Black */
-
-        color: #070707;
+    @media (max-width:520px) {
+        h1{
+            font-size: 25px;
+        }
+        p{
+            font-size: 14px;
+        }
     }
-    h4{
-        max-width: 250px;
-        font-size: 18px;
-        line-height: 22px;
-        text-align: center;
-
-        /* Black */
-
-        color: #070707;
+    @media (max-width:410px) {
+        p{
+            font-size: 11px;
+        }
     }
 `
 
