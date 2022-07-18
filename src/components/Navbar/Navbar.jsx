@@ -15,7 +15,7 @@ const Navbar = () => {
     }
   }
   
-  const [Color, setColor] = useState('home')  
+  const [Color, setColor] = useState('home')
 
   const menu = useRef()
 
