@@ -20,11 +20,11 @@ const Navbar = () => {
   const menu = useRef()
 
   const openMenu = ()=>{
-    menu.current.style.width = "250px"
+    menu.current.style.right = "0"
   }
 
   const closeMenu = ()=>{
-    menu.current.style.width = "0"
+    menu.current.style.right = "-100%"
   }
 
   const Scrolling = (val) => {
@@ -32,7 +32,7 @@ const Navbar = () => {
       top:val,
       behavior:'smooth'
     })
-    menu.current.style.width = '0'
+    menu.current.style.right = '-100%'
   }
 
   return (
@@ -40,17 +40,17 @@ const Navbar = () => {
       <Container>
         <Logo onClick={()=>Scrolling(0)} src={LogoPng}/>
         <LinkWrapper>
-          <Link onClick={()=>setColor('home')} style={{color:Color==='home' ? '#070707' : '#828282'}} >Home</Link>
-          <Link onClick={()=>setColor('about')} style={{color:Color==='about' ? '#070707' : '#828282'}} >About me</Link>
-          <Link onClick={()=>setColor('skills')} style={{color:Color==='skills' ? '#070707' : '#828282'}} >Skills</Link>
-          <Link onClick={()=>setColor('portfolio')} style={{color:Color==='portfolio' ? '#070707' : '#828282'}} >Portfolio</Link>
-          <Link onClick={()=>setColor('contact')} style={{color:Color==='contact' ? '#070707' : '#828282'}} >Contacts</Link>
+          <Link onClick={()=>{setColor('home'); Scrolling(0)}} style={{color:Color==='home' ? '#070707' : '#828282'}} >Home</Link>
+          <Link onClick={()=>{setColor('about');Scrolling(800)}} style={{color:Color==='about' ? '#070707' : '#828282'}} >About me</Link>
+          <Link onClick={()=>{setColor('skills');Scrolling(1500)}} style={{color:Color==='skills' ? '#070707' : '#828282'}} >Skills</Link>
+          <Link onClick={()=>{setColor('portfolio')}} style={{color:Color==='portfolio' ? '#070707' : '#828282'}} >Portfolio</Link>
+          <Link onClick={()=>{setColor('contact')}} style={{color:Color==='contact' ? '#070707' : '#828282'}} >Contacts</Link>
         </LinkWrapper>
         <MenuWrapper ref={menu}>
           <CloseBtn onClick={closeMenu}>&times;</CloseBtn>
-          <h2 onClick={()=>Scrolling(0)}>Home</h2>
-          <h2 onClick={()=>Scrolling(200)}>About me</h2>
-          <h2>Skills</h2>
+          <h2 onClick={()=>Scrolling(0)} >Home</h2>
+          <h2 onClick={()=>Scrolling(950)} >About me</h2>
+          <h2 onClick={()=>Scrolling(1550)} >Skills</h2>
           <h2>Portfolio</h2>
           <h2>Contacts</h2>
         </MenuWrapper>

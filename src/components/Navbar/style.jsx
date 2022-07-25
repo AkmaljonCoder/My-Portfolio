@@ -3,26 +3,29 @@ import styled from 'styled-components'
 import MenuIcon from '@mui/icons-material/Menu';
 
 export const Wrapper = styled.div`
-    width: 100%;
-    height: auto;
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    transition: all ease 0.5s;
 `
 
 export const Container = styled.div`
-    width: 95%;
     background-color: white;
+    width: 95%;
     height: 100px;
+    z-index: 99;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid black;
-    position: fixed;
+    /* position: fixed; */
     top: 0;
-    z-index: 99;
     max-width: 1300px;
-    margin: 0 auto; 
+    margin: 0 auto;
 `
 
 export const Logo = styled.img`
@@ -57,11 +60,11 @@ export const Link = styled.h2`
 
 export const MenuWrapper = styled.div`
     height: 100%;
-    width: 0;
+    width: 250px;
     position: fixed;
     z-index: 1;
     top: 0;
-    right: 0;
+    right: -100%;
     display: flex;
     flex-direction: column;
     justify-content: start;

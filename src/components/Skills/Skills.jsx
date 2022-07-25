@@ -22,7 +22,7 @@ const Skills = () => {
           <Card>
             <img src={CssIc} alt="" />
             <p>CSS</p>
-            <AppRating readOnly value={4} />
+            <AppRating readOnly value={5} />
           </Card>
           <Card>
             <img src={JsIc} alt="" />
@@ -32,7 +32,7 @@ const Skills = () => {
           <Card>
             <img src={ReactIc} alt="" />
             <p>React Js</p>
-            <AppRating readOnly value={4} />
+            <AppRating readOnly value={3} />
           </Card>
         </Programms>
       </Container>
