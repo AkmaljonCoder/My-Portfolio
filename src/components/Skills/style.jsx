@@ -19,6 +19,7 @@ export const Container = styled.div`
 `
 
 export const Title = styled.h1`
+    margin: 91px;
     font-size: 34px;
     line-height: 42px;
     text-align: center;
@@ -31,6 +32,7 @@ export const Text = styled.p`
     line-height: 22px;
     text-align: center;
     color: #070707;
+    margin-bottom: 83px;
 `
 
 export const Programms = styled.div`
@@ -38,6 +40,10 @@ export const Programms = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media (max-width:650px) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 `
 
 export const Card = styled.div`
@@ -50,17 +56,23 @@ export const Card = styled.div`
         width: 89px;
         height: 88px;
         object-fit: contain;
+        margin-bottom: 23px;
     }
     p{
         font-size: 14px;
         line-height: 17px;
         text-align: center;
         color: #828282;
+        margin-bottom: 41px;
+    }
+    @media (max-width:650px) {
+        margin: 0 30px;
     }
 `
 
 export const AppRating= styled(Rating)`
-    position: absolute !important;
-    bottom: 20px !important;
-    right: 10px !important;
+    color: black !important;
+    margin-bottom: 100px !important;
 `
+
+
