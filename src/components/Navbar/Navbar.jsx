@@ -20,7 +20,7 @@ const Navbar = () => {
   const menu = useRef()
 
   const openMenu = ()=>{
-    menu.current.style.width = "100%"
+    menu.current.style.width = "250px"
   }
 
   const closeMenu = ()=>{

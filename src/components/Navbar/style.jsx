@@ -64,9 +64,9 @@ export const MenuWrapper = styled.div`
     right: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #111;
+    justify-content: start;
+    align-items: flex-start;
+    background-color: #181818;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -75,7 +75,7 @@ export const MenuWrapper = styled.div`
         color: #818181;
         display: block;
         transition: 0.3s;
-        margin: 20px 0;
+        margin: 20px 20px;
         &:hover{
             color: #f1f1f1;
         }
