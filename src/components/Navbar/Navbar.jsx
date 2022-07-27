@@ -44,7 +44,7 @@ const Navbar = () => {
           <Link onClick={()=>{setColor('about');Scrolling(800)}} style={{color:Color==='about' ? '#070707' : '#828282'}} >About me</Link>
           <Link onClick={()=>{setColor('skills');Scrolling(1500)}} style={{color:Color==='skills' ? '#070707' : '#828282'}} >Skills</Link>
           <Link onClick={()=>{setColor('portfolio');Scrolling(2100)}} style={{color:Color==='portfolio' ? '#070707' : '#828282'}} >Portfolio</Link>
-          <Link onClick={()=>{setColor('contact')}} style={{color:Color==='contact' ? '#070707' : '#828282'}} >Contacts</Link>
+          <Link onClick={()=>{setColor('contact');Scrolling(6000)}} style={{color:Color==='contact' ? '#070707' : '#828282'}} >Contacts</Link>
         </LinkWrapper>
         <MenuWrapper ref={menu}>
           <CloseBtn onClick={closeMenu}>&times;</CloseBtn>
@@ -52,7 +52,7 @@ const Navbar = () => {
           <h2 onClick={()=>Scrolling(950)} >About me</h2>
           <h2 onClick={()=>Scrolling(1550)} >Skills</h2>
           <h2 onClick={()=>Scrolling(3000)}>Portfolio</h2>
-          <h2>Contacts</h2>
+          <h2 onClick={()=>Scrolling(5000)}>Contacts</h2>
         </MenuWrapper>
         <Menu onClick={openMenu}/>
       </Container>

@@ -15,9 +15,9 @@ const Footer = () => {
             <Text>Want to know more or just chat? <br /> You are welcome!</Text>
             <Button>Send message</Button>
             <NetworkIcons>
-                <img src={LinkedIn} alt="" />
-                <img src={Telegram} alt="" />
-                <img src={Instagram} alt="" />
+                <img onClick={()=>window.open('https://www.linkedin.com/in/akmal-azimov-a003ab246/')} src={LinkedIn} alt="" />
+                <img onClick={()=>window.open('https://t.me/akmal_one')} src={Telegram} alt="" />
+                <img onClick={()=>window.open('https://www.instagram.com/akmaljon_azimovv/')} src={Instagram} alt="" />
             </NetworkIcons>
             <LinkDiv>
                 <h2>Like me on</h2>

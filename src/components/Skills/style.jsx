@@ -48,31 +48,44 @@ export const Programms = styled.div`
 
 export const Card = styled.div`
     width: 166px;
+    height: 200px;
     display: flex;
-    margin: 8px;
+    /* margin: 8px; */
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
+    border-radius: 20px;
+    margin-bottom: 100px;
+    transition: all ease 0.5s;
+    &:hover{
+        background-color: #afafaf55;
+        transform: scale(1.1);
+    }
     img{
         width: 89px;
         height: 88px;
         object-fit: contain;
-        margin-bottom: 23px;
+        /* margin-bottom: 23px; */
     }
     p{
         font-size: 14px;
         line-height: 17px;
         text-align: center;
         color: #828282;
-        margin-bottom: 41px;
+        /* margin-bottom: 41px; */
     }
     @media (max-width:650px) {
-        margin: 0 30px;
+        margin: 40px 30px;
+        background-color: #afafaf1f;
+        &:hover{
+            transform: none;
+            background-color: #afafaf1f;
+        }
     }
 `
 
 export const AppRating= styled(Rating)`
     color: black !important;
-    margin-bottom: 100px !important;
 `
 
 
