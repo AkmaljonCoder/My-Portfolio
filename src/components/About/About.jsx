@@ -1,12 +1,13 @@
 import React from 'react'
 import { Container } from './style'
+import Aos from 'aos'
 
 const About = () => {
   return (
     <Container>
         
         <h1>About me</h1>
-        <p> 
+        <p > 
             Hi , I'm Akmal - Frontend developer from Uzbekistan. <br />
             I'm interested in make web sites.
         </p>
