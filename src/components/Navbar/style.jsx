@@ -79,6 +79,7 @@ export const MenuWrapper = styled.div`
         display: block;
         transition: 0.3s;
         margin: 20px 20px;
+        cursor: pointer;
         &:hover{
             color: #f1f1f1;
         }
