@@ -18,7 +18,7 @@ const App = () => {
       offset: 200,
       duration: 600,
       easing: 'ease-in-sine',
-      delay: 100,
+      delay: 150,
     });
 
   }, [])
