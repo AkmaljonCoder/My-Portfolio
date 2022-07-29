@@ -13,26 +13,22 @@ const Skills = () => {
       <Container>
         <Title>Skills</Title>
         <Text>I work in such programs as</Text>
-        <Programms>
+        <Programms >
           <Card>
             <img src={HtmlIc} alt="" />
             <p>HTML</p>
-            <AppRating readOnly value={5} />
           </Card>
           <Card>
             <img src={CssIc} alt="" />
             <p>CSS</p>
-            <AppRating readOnly value={5} />
           </Card>
           <Card>
             <img src={JsIc} alt="" />
             <p>Javascript</p>
-            <AppRating readOnly value={4} />
           </Card>
           <Card>
             <img src={ReactIc} alt="" />
             <p>React Js</p>
-            <AppRating readOnly value={3} />
           </Card>
         </Programms>
       </Container>

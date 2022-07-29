@@ -48,7 +48,7 @@ export const Programms = styled.div`
 
 export const Card = styled.div`
     width: 166px;
-    height: 200px;
+    height: 160px;
     display: flex;
     /* margin: 8px; */
     flex-direction: column;
@@ -82,10 +82,6 @@ export const Card = styled.div`
             background-color: #afafaf1f;
         }
     }
-`
-
-export const AppRating= styled(Rating)`
-    color: black !important;
 `
 
 
