@@ -1,5 +1,11 @@
 import styled from 'styled-components'
 
+// Network icons
+
+import TwitterIcon from '@mui/icons-material/Twitter';
+import TelegramIcon from '@mui/icons-material/Telegram';
+import InstagramIcon from '@mui/icons-material/Instagram';
+
 export const Wrapper = styled.div`
     width: 100%;
     height: 560px;
@@ -60,13 +66,47 @@ export const NetworkIcons = styled.div`
     align-items: center;
     margin: 30px 0 0 0;
     margin-bottom: 30px;
-    img{
-        width: 40px;
-        height: 40px;
-        object-fit: contain;
-        color: #070707;
-        margin: 0 30px;
-        cursor: pointer;
+`
+
+// icons
+
+export const Twitter = styled(TwitterIcon)`
+    width: 40px !important;
+    height: 40px !important;
+    object-fit: contain !important;
+    color: #070707 !important;
+    margin: 0 30px !important;
+    cursor: pointer !important;
+    transition: all ease 0.3s !important;
+    &:hover{
+        color: #1C9AEF !important;
+    }
+`
+
+export const Telegram = styled(TelegramIcon)`
+    width: 40px !important;
+    height: 40px !important;
+    object-fit: contain !important;
+    color: #070707 !important;
+    margin: 0 30px !important;
+    cursor: pointer !important;
+    transition: all ease 0.3s !important;
+    &:hover{
+        color: #2FA6DD !important;
+    }
+`
+
+export const Instagram = styled(InstagramIcon)`
+    width: 40px !important;
+    height: 40px !important;
+    object-fit: contain !important;
+    color: #070707 !important;
+    margin: 0 30px !important;
+    cursor: pointer !important;
+    transition: all ease 0.3s !important;
+    border-radius: 10px !important;
+    &:hover{
+        color:  #FD0070 !important;
     }
 `
 
