@@ -1,5 +1,5 @@
 import React from 'react'
-import { AppRating, Card, Container, Programms, Text, Title, Wrapper } from './style'
+import {Card, Container, Programms, Text, Title, Wrapper } from './style'
 
 import HtmlIc from '../../assets/Skills/html-5.png'
 import CssIc from '../../assets/Skills/css-3.png'

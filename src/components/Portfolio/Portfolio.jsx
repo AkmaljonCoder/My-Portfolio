@@ -5,6 +5,7 @@ import CyberSport from '../../assets/Portfolio/cybersport.png'
 import EasyBank from '../../assets/Portfolio/easy-bank.png'
 import TodoList from '../../assets/Portfolio/todo-list.png'
 import Shop from '../../assets/Portfolio/shop.png'
+import ReactTodo from '../../assets/Portfolio/react-todo-list.png'
 
 const Portfolio = () => {
   return (
@@ -30,7 +31,12 @@ const Portfolio = () => {
 
         <Box>
           <ProjectImg src={Shop} />
-          <a onClick={()=>window.open('https://market-web-weld.vercel.app/')}>Online shop project</a>
+          <a onClick={()=>window.open('https://my-market-project.vercel.app/')}>Online shop project</a>
+        </Box>
+
+        <Box>
+          <ProjectImg src={ReactTodo} />
+          <a onClick={()=>window.open('https://react-todo-app-rose-theta.vercel.app/')}>React todo app</a>
         </Box>
 
       </BoxWrapper>

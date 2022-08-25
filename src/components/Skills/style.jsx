@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { Rating } from '@mui/material'
 
 export const Wrapper = styled.div`
     width: 100%;
@@ -38,12 +37,12 @@ export const Text = styled.p`
 export const Programms = styled.div`
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    @media (max-width:650px) {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+    flex-wrap: wrap;
+    // @media (max-width:650px) {
+    //     justify-content: center;
+    // }
 `
 
 export const Card = styled.div`
@@ -55,7 +54,8 @@ export const Card = styled.div`
     justify-content: space-around;
     align-items: center;
     border-radius: 20px;
-    margin-bottom: 100px;
+    margin: 0 80px;
+    margin-bottom: 70px;
     transition: all ease 0.5s;
     &:hover{
         background-color: #afafaf55;
@@ -80,6 +80,17 @@ export const Card = styled.div`
         &:hover{
             transform: none;
             background-color: #afafaf1f;
+        }
+    }
+    @media (max-width:470px) {
+        width: 100px;
+        height: 100px;
+        img{
+            width: 40px;
+            height: 40px;
+        }
+        p{
+            font-size: 10px;
         }
     }
 `
