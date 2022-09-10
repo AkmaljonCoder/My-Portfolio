@@ -7,12 +7,12 @@ const Entery = () => {
       <Container>
         <TextDiv>
           <h1>Akmal Azimov</h1>
-          <h3>Front-end developer <br/> 16 years old , Uzbekistan</h3>
+          <h3>Front-end developer <br/> 17 years old , Uzbekistan</h3>
           <h2>RU | ENG</h2> 
         </TextDiv>
         <ImageBgc ></ImageBgc>
       </Container>
-    </Wrapper>                                                                              
+    </Wrapper>                                              
   )
 }
 
