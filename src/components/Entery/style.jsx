@@ -65,6 +65,7 @@ export const TextDiv = styled.div`
 export const ImageBgc = styled.div`
     width: 100%;
     height: 500px;
+    border-radius: 20px;
     background-image: url(${background});
     background-repeat: no-repeat;
     background-size: cover;

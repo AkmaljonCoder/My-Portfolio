@@ -1,6 +1,7 @@
 import React from 'react'
 import { Container, ImageBgc, TextDiv, Wrapper } from './style'
 import AOS from 'aos'
+
 const Entery = () => {
   return (
     <Wrapper >
@@ -12,7 +13,7 @@ const Entery = () => {
         </TextDiv>
         <ImageBgc ></ImageBgc>
       </Container>
-    </Wrapper>                                              
+    </Wrapper>
   )
 }
 

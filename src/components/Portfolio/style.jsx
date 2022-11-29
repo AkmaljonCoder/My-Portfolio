@@ -24,9 +24,11 @@ export const Title = styled.h1`
 export const BoxWrapper = styled.div`
     width: 100%;
     height: auto;
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
     @media (max-width:1024px) {
         flex-direction: row;
@@ -36,61 +38,85 @@ export const BoxWrapper = styled.div`
 `
 
 export const Box = styled.div`
-    width: 100%;
+    width: 360px;
+    height: 300px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: start;
     align-items: center;
-    margin-bottom: 99px;
+    margin: 0 20px;
+    margin-bottom: 80px;
+    transition: all ease 0.3s;
+    box-shadow: 0px 0px 12px 2px rgba(0, 0, 0, 0.19);
+
     a{
         font-size: 18px;
-        line-height: 22px;
         text-align: center;
-        text-decoration-line: underline;
+        font-weight: 500;
+        text-decoration-line: none;
         color: #070707;
         cursor: pointer;
-    }
-    @media (max-width:1024px) {
-        width: 400px;
-        height: 280px;
-        margin: 15px;
-        background-color: #b3b3b386;
-        border-radius: 10px;
-        justify-content: start;
-        margin-bottom: 100px;
-        img{
-            width: 100%;
-            height: auto;
-            margin-bottom: 15px;
-            border-radius: 10px 10px 0 0;
+        transition: all ease 0.3s;
+        margin-bottom: 10px;
+
+        :hover{
+            color: #08bbbb;
         }
     }
-    @media (max-width:865px) {
-        width: 80%;
-        height: auto;
-        img{
-            margin-bottom: 0;
-        }
-        a{
-            width: 100%;
-            padding: 30px 0;
-        }
+
+    &:hover{
+        transform: scale(1.1);
     }
-    @media (max-width:468px) {
-        a{
-            font-size: 14px;
-            padding: 15px 0;
-        }
-    }
+
     @media (max-width:425px) {
-        margin-bottom: 60px;
+        width: 90%;
+        :hover{
+            transform: none;
+        }
     }
 `
 
 export const ProjectImg = styled.img`
-    width: 936.24px;
-    height: 510px;
+    width: 350px;
+    height: 200px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 10px;
     object-fit: contain;
-    margin-bottom: 44px;
+
+    @media (max-width:425px) {
+        width: 100%;
+    }
+`
+
+export const Technos = styled.div`
+    display: flex;
+    align-items: center;
+
+    h2{
+        font-size: 18px;
+        text-align: center;
+        font-weight: 500;
+        text-decoration-line: none;
+        margin: 0 10px;
+    }
+
+    .html{
+        color: orange;
+    }
+
+    .css{
+        color: #1795c7;
+        
+    }
+
+    .react{
+        color: #09488f;
+    }
+
+    .api{
+        color: purple;
+    }
 `
 

@@ -11,6 +11,10 @@ export const Wrapper = styled.div`
     position: fixed;
     z-index: 99;
     transition: all ease 0.5s;
+
+    @media (max-width:768px) {
+        background-color: #5c5c5cdc;
+    }
 `
 
 export const Container = styled.div`
@@ -26,6 +30,32 @@ export const Container = styled.div`
     top: 0;
     max-width: 1300px;
     margin: 0 auto;
+
+    .burger{
+        display: none;
+    }
+
+    .show-menu{
+        opacity: 1;
+        visibility: visible;
+        @keyframes appear {
+            0% { opacity: 0; translate: 0 50px; }
+            100% { opacity: 1; }
+        }
+    
+        h2{
+            animation: appear 0.3s both;
+        }
+    }
+
+    @media (max-width:768px) {
+        background-color: rgb(0,0,0,0);
+        .burger{
+            display: block;
+            margin: 0 30px;
+            z-index: 3;
+        }
+    }
 `
 
 export const Logo = styled.img`
@@ -58,30 +88,41 @@ export const Link = styled.h2`
     transition: all ease 0.6s;
 `
 
-export const MenuWrapper = styled.div`
+export const Menus = styled.div`
+    width: 100%;
     height: 100%;
-    width: 250px;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     top: 0;
-    right: -100%;
+    left: 0;
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    align-items: flex-start;
-    background-color: #181818;
-    overflow-x: hidden;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(20px);
+    opacity: 0;
+    visibility: hidden;
     transition: 0.5s;
-    padding-top: 60px;
     h2{
-        font-size: 25px;
-        color: #818181;
-        display: block;
-        transition: 0.3s;
-        margin: 20px 20px;
+        color: #f9f9f9;
+        font-size: 32px;
         cursor: pointer;
-        &:hover{
-            color: #f1f1f1;
+        font-weight: 500;
+        text-transform: capitalize;
+    }
+    
+    @media (max-width:425px){
+        align-items: start;
+        gap: 50px;
+        h2{
+            margin-left: 40px;
+        }
+    }
+    @media (max-width:375px) {
+        h2{
+            margin-left: 20px;
         }
     }
 `
@@ -97,19 +138,4 @@ export const Menu = styled(MenuIcon)`
     }
 `
 
-export const CloseBtn = styled.h3`
-    padding: 8px 8px 8px 32px;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-    &:hover{
-        color: #f1f1f1;
-    }
-`
 
