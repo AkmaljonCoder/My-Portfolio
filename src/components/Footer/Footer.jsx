@@ -11,9 +11,9 @@ const Footer = () => {
             <Text>Want to know more or just chat? <br /> You are welcome!</Text>
             <Button>Send message</Button>
             <NetworkIcons>
-                <Twitter onClick={()=>window.open('https://twitter.com/azimov_akmaljon/')}  alt="" />
-                <Telegram onClick={()=>window.open('https://t.me/akmal_one')}  alt="" />
-                <Instagram onClick={()=>window.open('https://www.instagram.com/akmaljon_azimovv/')}  alt="" />
+                <Twitter onClick={()=>window.open('https://twitter.com/akmalcoder/')}  alt="" />
+                <Telegram onClick={()=>window.open('https://t.me/akmaljon_azimjonov/')}  alt="" />
+                <Instagram onClick={()=>window.open('https://www.instagram.com/dev.akmal/')}  alt="" />
             </NetworkIcons>
             <LinkDiv>
                 <h2>Like me on</h2>
