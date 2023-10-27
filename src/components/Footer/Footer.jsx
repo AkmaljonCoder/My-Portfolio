@@ -18,7 +18,7 @@ const Footer = () => {
             <LinkDiv>
                 <h2>Like me on</h2>
                 <p onClick={()=>window.open('https://twitter.com/akmalcoder/')}>Twitter, </p>
-                <p onClick={()=>window.open('https://t.me/azimjonov_akmaljon')}>Telegram, </p>
+                <p onClick={()=>window.open('https://t.me/akmalcode')}>Telegram, </p>
                 <p onClick={()=>window.open('https://www.instagram.com/dev.akmal/')}>Instagram</p>
             </LinkDiv>
         </Container>
