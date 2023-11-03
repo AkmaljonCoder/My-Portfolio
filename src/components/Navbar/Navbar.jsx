@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react'
-import { CloseBtn, Container, Link, LinkWrapper, Logo, Menu, Menus, MenuWrapper, Wrapper } from './style'
+import { Container, Link, LinkWrapper, Logo, Menus, Wrapper } from './style'
 
 import {BurgerSpin as Burger} from 'react-burger-icons' // react burger icon
 
@@ -7,37 +7,19 @@ import LogoPng from '../../assets/Logo.svg'
 
 const Navbar = () => {
 
-  const [scroll, setScroll] = useState(false);
-
   const [isClosed, setIsClosed] = useState(false);
 
   const toggleClosed = ( ) => setIsClosed(!isClosed);
   
-  const changeColor = ()=>{
-    if(window.scrollY >= 50){
-      setScroll(true)
-    }else{
-      setScroll(false)
-    }
-  }
-  
-  const [Color, setColor] = useState('home')
+  const [Color, setColor] = useState('home');
 
   const menu = useRef()
-
-  const openMenu = ()=>{
-    menu.current.style.right = "0"
-  }
-
-  const closeMenu = ()=>{
-    menu.current.style.right = "-100%"
-  }
 
   const Scrolling = (val) => {
     window.scrollTo({
       top:val,
       behavior:'smooth'
-    })
+    });
     menu.current.style.right = '-100%'
   }
 
