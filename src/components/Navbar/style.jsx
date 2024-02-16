@@ -62,7 +62,6 @@ export const Logo = styled.img`
     width: 170px;
     height: 90px;
     object-fit: contain;
-    cursor: pointer;
     @media (max-width:460px) {
         width: 150px;
         height: 70px;
